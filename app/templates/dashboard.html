@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCAN1PAGE</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/scan3.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -38,30 +38,30 @@
                 <label for="scan1"></label>
             </div>
 
-                <div class="report-box-container">
-                    <div class="report-box">
-                        <div class="report-heading">
-                            <span>Report</span>
-                            <span>View Raw</span>
-                        </div>
-                        <div class="line"></div>
-                        <div class="raw-view">
-                            <ul>
-                                <li>One </li>
-                                <li>Two </li>
-                                <li>Three </li>
-                            </ul>
-                            <ul>
-                                <li><button onclick="redirectToPage('button1.html')">1</button></li>
-                                <li><button onclick="redirectToPage('button2.html')">2</button></li>
-                               <li><button onclick="redirectToPage('button3.html')">3</button></li>
-                            </ul>
-                           
-                        </div>
+            <div class="report-box-container">
+                <div class="report-box">
+                    <div class="report-heading">
+                        <span>Report</span>
+                        <span>View Raw</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="raw-view">
+                        <ul>
+                            <li>One </li>
+                            <li>Two </li>
+                            <li>Three </li>
+                        </ul>
+                        <ul>
+                            <li><button onclick="redirectToPage('button1.html')">1</button></li>
+                            <li><button onclick="redirectToPage('button2.html')">2</button></li>
+                            <li><button onclick="redirectToPage('button3.html')">3</button></li>
+                        </ul>
+
                     </div>
                 </div>
+            </div>
 
-            
+
         </div>
     </div>
 
@@ -70,7 +70,6 @@
 
             window.location.href = 'index.html';
         }
-
 
         function redirectToPage(page) {
             window.location.href = page;
