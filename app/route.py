@@ -1,12 +1,13 @@
+from types import MethodType
 from flask import  render_template
 
 
 # Define route setup function
 def setup_routes(app):
     # landing page and authentication
-    @app.route('/')
-    def index():
-        return render_template("index.html")
+    # @app.route('/')
+    # def index():
+    #     return render_template("index.html")
 
     # landing page and authentication
     @app.route('/dashboard')

@@ -22,27 +22,49 @@
     <div class="box">
 
         <span class="borderline"></span>
-        <form onsubmit="return redirectToNewPage()">
+
+        <form method="post">
             <h2>Log in</h2>
-            <div class="inputbox">
-                <input type="text" required="required">
-                <span>Username</span>
-                <i></i>
-            </div>
+            <br/>
+            {{ form.hidden_tag() }}
 
-            <div class="inputbox">
-                <input type="password" required="required">
-                <span>Password</span>
-                <i></i>
-            </div>
+            {{ form.name.label }}
+            {{ form.name() }}
 
-            <div class="links">
-                <a href="# ">Forgot password</a>
-                <a href="# ">Signup</a>
+            {{ form.password.label }}
+            {{ form.password() }}
+            <br />
 
-            </div>
-            <input type="submit" value="login">
+            {% if form.name.errors %}
+            <p style="color: red;">{{ form.name.errors[0] }}</p>
+            {% endif %}
+
+            <br />
+            {{ form.submit() }}
         </form>
+
+
+
+        <!-- <form onsubmit="return redirectToNewPage()"> -->
+        <!--     <div class="inputbox"> -->
+        <!--         <input type="text" required="required"> -->
+        <!--         <span>Username</span> -->
+        <!--         <i></i> -->
+        <!--     </div> -->
+        <!---->
+        <!--     <div class="inputbox"> -->
+        <!--         <input type="password" required="required"> -->
+        <!--         <span>Password</span> -->
+        <!--         <i></i> -->
+        <!--     </div> -->
+        <!---->
+        <!--     <div class="links"> -->
+        <!--         <a href="# ">Forgot password</a> -->
+        <!--         <a href="# ">Signup</a> -->
+        <!---->
+        <!--     </div> -->
+        <!--     <input type="submit" value="login"> -->
+        <!-- </form> -->
     </div>
     <script>
         function redirectToNewPage() {
